@@ -81,6 +81,9 @@ export const Hero = () => {
             >
               <i className="fab fa-instagram"></i>
             </motion.a>
+            <motion.a href="mailto:tcoates@mines.edu" target="_blank">
+              <i className="fas fa-envelope"></i>
+            </motion.a>
           </motion.div>
         </motion.div>
 
@@ -101,31 +104,45 @@ export const Hero = () => {
                 borderRadius: "20px",
                 background: "rgba(30,41,59,0.99)",
                 backdropFilter: "blur(10px)",
-                marginBottom: 50
+                marginBottom: 50,
               }}
             >
-              {`const aboutMe: DeveloperProfile = {
+              {`const identity: DeveloperProfile = {
   codename: "ThomasCoates",
   origin: "🌎 Marathon, Florida Keys",
   role: "Fullstack Developer",
   stack: {
-    languages: ["Python", "C/C++", "Java", "PostgreSQL", "TypeScript", "HTML/CSS", "Bash", "Swift", "OCaml"],
-    frameworks: ["Angular", "React", "RxJS", "Node.js"],
-    tools: ["Git", "Linux", "Jira", "Docker", "VirtualBox", "Node-RED"],
-    concepts: ["OOP", "REST APIs", "Unit Testing"]
+    frontend: ["TypeScript", "HTML/CSS", "Angular", "React", "RxJS"],
+    backend: ["Python", "C/C++", "Java", "Swift", "OCaml", "Node.js"],
+    tools: ["Git", "Linux", "Jira", "Docker", "VirtualBox"],
+    databases: ["PostgreSQL"],
+    scripting: ["Bash"]  
   },
   traits: [
-    "pixel-perfectionist",
-    "clean code advocate",
     "problem-solver",
+    "indie game developer",
+    "runs on coffee → outputs code",
     "dark mode enthusiast"
   ],
-  missionStatement: "Turning complex ideas into clean, user-friendly applications.",
+  missionStatement: "Embracing complexity to build simplicity.",
   education: "🎓 M.S. Computer Science, Colorado School of Mines",
   availability: "🚀 Available for hire"
 };`}
             </SyntaxHighlighter>
           </div>
+          <motion.div
+            className="floating-card"
+            animate={{ y: [0, -10, 0], rotate: [0, 2, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <div className="card-content">
+              <span className="card-icon">💻</span>
+              <span className="card-text">
+                Currently building a full-stack task manager app from the ground
+                up.
+              </span>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </motion.section>
