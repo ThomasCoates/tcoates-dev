@@ -28,7 +28,7 @@ export const Navbar = () => {
                     whileHover={{scale: 1.05}} 
                     whileTap={{ scale: 0.95}}
                 > 
-                    Portfolio
+                    Thomas Coates
                 </motion.div>
 
                 <motion.ul 
@@ -58,7 +58,7 @@ export const Navbar = () => {
                         whileHover={{ scale: 1.1 }} 
                         whileTap={{scale: 0.95}}
                     >
-                        <a href="#contacts"> Contact</a>
+                        <a href="#contact"> Contact</a>
                     </motion.li>
                 </motion.ul>
             </motion.nav>

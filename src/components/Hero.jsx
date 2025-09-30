@@ -49,7 +49,7 @@ export const Hero = () => {
           </motion.p>
           <motion.div className="cta-buttons" variants={staggerContainer}>
             <motion.a
-              href="projects"
+              href="#projects"
               className="cta-primary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.05 }}
@@ -57,7 +57,7 @@ export const Hero = () => {
               View My Work
             </motion.a>
             <motion.a
-              href="contacts"
+              href="#contact"
               className="cta-secondary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.05 }}
@@ -81,7 +81,7 @@ export const Hero = () => {
             >
               <i className="fab fa-instagram"></i>
             </motion.a>
-            <motion.a href="mailto:tcoates@mines.edu" target="_blank">
+            <motion.a href="mailto:tcoates.dev@gmail.com" target="_blank">
               <i className="fas fa-envelope"></i>
             </motion.a>
           </motion.div>
