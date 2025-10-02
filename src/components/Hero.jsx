@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import Typewriter from "typewriter-effect";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -15,6 +17,38 @@ const staggerContainer = {
     },
   },
 };
+
+const subtitles = [
+  "Hey there!",
+  "Nice to meet you.",
+  "My name is Thomas.",
+  "I recently graduated from Colorado School of Mines.",
+  "I earned my Master’s in Computer Science in August 2025.",
+  "I'm interested in full-stack software development.",
+  "I served in the United States Marine Corps.",
+  "I enjoy fishing in the Florida Keys.",
+  "I’m passionate about photography.",
+  "Thanks for visiting my portfolio!",
+];
+
+function TypewriterLoop() {
+  return (
+    <Typewriter
+      options={{
+        loop: true,
+        autoStart: true,
+        delay: 50,
+      }}
+      onInit={(typewriter) => {
+        subtitles.forEach((text) => {
+          typewriter.typeString(text).pauseFor(2000).deleteAll().start();
+        });
+      }}
+    />
+  );
+}
+
+export default TypewriterLoop;
 
 export const Hero = () => {
   return (
@@ -43,9 +77,11 @@ export const Hero = () => {
           >
             Thomas Coates
           </motion.h1>
-          <motion.h2 className="hero-subtitle">Fullstack Developer</motion.h2>
+          <motion.h2 className="hero-subtitle">
+            <TypewriterLoop/>
+          </motion.h2>
           <motion.p className="hero-description" variants={fadeInUp}>
-            I recently recieved a Master's degree from Colorado School of Mines.
+      
           </motion.p>
           <motion.div className="cta-buttons" variants={staggerContainer}>
             <motion.a
@@ -109,24 +145,25 @@ export const Hero = () => {
             >
               {`const identity: DeveloperProfile = {
   codename: "ThomasCoates",
-  origin: "🌎 Marathon, Florida Keys",
-  role: "Fullstack Developer",
+  location: "Marathon, Florida Keys",
+  role: "Computer Science Graduate | Software Developer",
   stack: {
-    frontend: ["TypeScript", "HTML/CSS", "Angular", "React", "RxJS"],
+    frontend: ["TypeScript", "JavaScript", "HTML/CSS", "Angular", "React", "RxJS"],
     backend: ["Python", "C/C++", "Java", "Swift", "OCaml", "Node.js"],
-    tools: ["Git", "Linux", "Jira", "Docker", "VirtualBox"],
+    tools: ["Git", "Linux", "Docker", "VirtualBox", "Jira"],
     databases: ["PostgreSQL"],
     scripting: ["Bash"]  
   },
-  traits: [
-    "problem-solver",
-    "indie game developer",
-    "runs on coffee → outputs code",
-    "dark mode enthusiast"
+  strengths: [
+    "problem solving",
+    "attention to detail",
+    "strong team collaboration",
+    "clear communication of complex topics"
   ],
-  missionStatement: "Embracing complexity to build simplicity.",
-  education: "🎓 M.S. Computer Science, Colorado School of Mines",
-  availability: "🚀 Available for hire"
+  mission: "Build reliable, scalable, and user-focused software.",
+  education: "M.S. Computer Science, Colorado School of Mines",
+  availability: "Open to opportunities",
+  hobbies: ["photography", "rock climbing", "gym training", "PC gaming"]
 };`}
             </SyntaxHighlighter>
           </div>
