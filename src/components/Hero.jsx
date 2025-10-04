@@ -19,16 +19,15 @@ const staggerContainer = {
 };
 
 const subtitles = [
-  "Hey there!",
-  "Nice to meet you.",
-  "My name is Thomas.",
-  "I recently graduated from Colorado School of Mines.",
-  "I earned my Master’s in Computer Science in August 2025.",
-  "I'm interested in full-stack software development.",
-  "I served in the United States Marine Corps.",
-  "I enjoy fishing in the Florida Keys.",
-  "I’m passionate about photography.",
-  "Thanks for visiting my portfolio!",
+"Hey there!",
+"I'm Thomas.",
+"Mines graduate, M.S. Computer Science 2025.",
+"Full-stack developer in the making.",
+"Marine Corps Veteran — MV-22 Osprey avionics tech.",
+"Into fishing, photography, and problem-solving.",
+"Always learning, always building.",
+"Glad you're here.",
+"Thanks for checking out my portfolio!"
 ];
 
 function TypewriterLoop() {
@@ -67,7 +66,7 @@ export const Hero = () => {
           animate="animate"
         >
           <motion.div className="hero-badge">
-            <span>👋 Hello, I'm </span>
+            {/*<span>👋 Hello, I'm </span>*/}
           </motion.div>
 
           <motion.h1
@@ -78,11 +77,9 @@ export const Hero = () => {
             Thomas Coates
           </motion.h1>
           <motion.h2 className="hero-subtitle">
-            <TypewriterLoop/>
+            <TypewriterLoop />
           </motion.h2>
-          <motion.p className="hero-description" variants={fadeInUp}>
-      
-          </motion.p>
+          <motion.p className="hero-description" variants={fadeInUp}></motion.p>
           <motion.div className="cta-buttons" variants={staggerContainer}>
             <motion.a
               href="#projects"
@@ -148,7 +145,7 @@ export const Hero = () => {
   location: "Marathon, Florida Keys",
   role: "Computer Science Graduate | Software Developer",
   stack: {
-    frontend: ["TypeScript", "JavaScript", "HTML/CSS", "Angular", "React", "RxJS"],
+    frontend: ["TypeScript", "HTML/CSS", "Angular", "React", "RxJS"],
     backend: ["Python", "C/C++", "Java", "Swift", "OCaml", "Node.js"],
     tools: ["Git", "Linux", "Docker", "VirtualBox", "Jira"],
     databases: ["PostgreSQL"],
@@ -163,7 +160,7 @@ export const Hero = () => {
   mission: "Build reliable, scalable, and user-focused software.",
   education: "M.S. Computer Science, Colorado School of Mines",
   availability: "Open to opportunities",
-  hobbies: ["photography", "rock climbing", "gym training", "PC gaming"]
+  hobbies: ["photography", "rock climbing", "lifting", "PC gaming"]
 };`}
             </SyntaxHighlighter>
           </div>
@@ -175,8 +172,7 @@ export const Hero = () => {
             <div className="card-content">
               <span className="card-icon">💻</span>
               <span className="card-text">
-                Currently building a full-stack task manager app from the ground
-                up.
+                Currently building this portfolio website to showcase my projects.
               </span>
             </div>
           </motion.div>
