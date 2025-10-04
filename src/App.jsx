@@ -25,6 +25,7 @@ function App() {
 
       <Contact />
 
+
       <motion.footer
         className="footer"
         initial={{ opacity: 0 }}

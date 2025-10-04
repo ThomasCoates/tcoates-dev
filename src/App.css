@@ -4,49 +4,8 @@
   box-sizing: border-box;
 }
 
-/* Version #1 color pallet (more of a purple/blue theme) 
-:root {
-  --primary-color: #7c3aed;
-  --primary-dark: #5b21b6;
-  --secondary-color: #db2777;
-  --accent-color: #f472b6;
-  --text-color: #e2e8f0;
-  --light-text: #94a3b8;
-  --background: #0f172a;
-  --section-bg: #1e293b;
-  --card-bg: #1e293b;
-  --gradient-start: #7c3aed;
-  --gradient-end: #db2777;
-  --nav-bg: rgba(15, 23, 42, 0.8);
-  --card-border: rgba(148, 163, 184, 0.1);
-}
-*/
 
-/* Version #2 color pallet (dark-mode)
-:root {
-  --primary-color: #ffffff;
-  --primary-dark: #e5e5e5;
-  --secondary-color: #a3a3a3;
-
-  --text-color: #f5f5f5;
-  --light-text: #a3a3a3;
-
-  --background: #0a0a0a;
-  --section-bg: #171717;
-  --card-bg: #1f1f1f;
-
-  --accent-color: #f59e0b;
-
-  --gradient-start: #0a0a0a;
-  --gradient-end: #1f1f1f;
-
-  --nav-bg: rgba(10, 10, 10, 0.9);
-  --card-border: rgba(255, 255, 255, 0.08);
-}
-
-*/
-
-/* Version #3 color pallet (light-mode) */
+/* Color pallet */
 :root {
   --primary-color: #0f0f0f;
   --primary-dark: #1a1a1a;
@@ -200,40 +159,9 @@ body {
   line-height: 1.1;
 }
 
-/* Typewrite effect */
-.typewriter {
-  display: flex;
-  justify-content: center;
-}
-
-.typewriter p {
-  font-family: monospace;
-  font-size: 1.5rem;
-  margin-inline: auto;
-  overflow: hidden;
-  white-space: nowrap; /* Keeps on a single line*/
-  border-right: 1px solid; /* The cursor */
-  animation: typing 3s steps() forwards, /* steps = number of characters */
-  blink 1s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
 .hero-subtitle {
-  font-size: 2rem;
+  font-size: 1.4rem;
+  flex: 0 0 auto;
   color: var(--accent-color);
   margin-bottom: 1.5rem;
   font-weight: 600;

@@ -48,23 +48,22 @@ export const Projects = () => {
           <motion.div
             className="project-image"
             style={{
-              backgroundImage: "url('/projects/taskManager-highQ.jpg')",
+              backgroundImage: "url('/projects/portfolioWebsite.jpg')",
             }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           />
-          <h3>Full-Stack Task Manager App</h3>
+          <h3>Personal Portfolio Website</h3>
           <p>
-            Currently building a responsive task manager with authentication and
-            full CRUD functionality. Designing scalable APIs and a clean UI for
-            productivity.
+            Designed and developed a modern React/Vite portfolio to showcase my
+            projects and experience. Features motion animations, a typewriter
+            hero section, custom branding, and a code-style profile panel.
           </p>
           <div className="project-tech">
             <span>React</span>
-            <span>Typescript</span>
-            <span>Node.js</span>
-            <span>PostgreSQL</span>
-            <span>Docker</span>
+            <span>JavaScript</span>
+            <span>Vite</span>
+            <span>CSS</span>
             <span>Git</span>
           </div>
         </motion.div>
@@ -77,7 +76,7 @@ export const Projects = () => {
           <motion.div
             className="project-image"
             style={{
-              backgroundImage: "url('/projects/NodeRED-OpenPLC.png')",
+              backgroundImage: "url('/projects/NodeRED-OpenPLC.jpg')",
             }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
